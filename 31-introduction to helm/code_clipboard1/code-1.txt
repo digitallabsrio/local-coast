@@ -1,0 +1,5 @@
+# Navigate to the directory containing the chart
+cd /usercode/infrastructure
+
+# Install the chart with Helm
+helm install first-chart ./python-sample

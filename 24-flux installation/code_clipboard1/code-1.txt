@@ -1,0 +1,6 @@
+flux bootstrap github \
+  --owner=[Enter your Github username] \
+  --repository=flux-infra \
+  --branch=main \
+  --path=./educative-cluster \
+  --personal

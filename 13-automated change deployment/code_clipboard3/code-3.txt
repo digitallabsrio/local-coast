@@ -1,0 +1,4 @@
+cd /usercode/system
+git add .
+git commit -m "Increased the number of replicas"
+git push origin main

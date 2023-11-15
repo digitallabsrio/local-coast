@@ -1,0 +1,8 @@
+# Create a user to run the application
+RUN useradd -m educative-user
+
+# Add the user's home directory to the path
+ENV PATH="/home/educative-user/.local/bin:${PATH}"
+
+# Run the remaining instructions as the new user
+USER educative-user

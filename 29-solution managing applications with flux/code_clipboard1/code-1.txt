@@ -1,0 +1,7 @@
+flux create kustomization challenge-kustomization \
+  --target-namespace=default \
+  --source=challenge-source \
+  --path="./infrastructure" \
+  --prune=true \
+  --interval=1m \
+  --export > ./educative-cluster/python-sample-kustomization.yaml

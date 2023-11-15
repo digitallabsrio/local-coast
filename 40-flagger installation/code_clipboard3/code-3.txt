@@ -1,0 +1,8 @@
+# Add the repository containing Flagger charts to Helm
+helm repo add flagger https://flagger.app
+
+# Install Flagger within the ingress-nginx namespace
+helm upgrade -i flagger flagger/flagger \
+--namespace ingress-nginx \
+--set prometheus.install=true \
+--set meshProvider=nginx

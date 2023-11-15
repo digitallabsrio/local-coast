@@ -1,0 +1,2 @@
+# Start the application and listen on all IPs
+CMD [ "waitress-serve", "--port=5000", "--call", "app:create_app"]

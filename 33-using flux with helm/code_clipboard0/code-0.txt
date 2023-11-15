@@ -1,0 +1,5 @@
+  flux create source helm helm-source \
+    --url=https://helm.nginx.com/stable \
+    --interval=30s \
+    --namespace=flux-system \
+    --export

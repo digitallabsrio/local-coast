@@ -1,0 +1,2 @@
+# Run within a new terminal window by clicking the + button
+curl localhost:5000

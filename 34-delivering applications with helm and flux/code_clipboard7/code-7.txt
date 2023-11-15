@@ -1,0 +1,7 @@
+flux create helmrelease helm-release \
+  --interval=1m \
+  --source=GitRepository/helm-git-source \
+  --chart=./infrastructure/python-sample \
+  --target-namespace=default \
+  --values=/usercode/system/infrastructure/python-sample/version2-values.yaml \
+  --export > ./educative-cluster/python-sample-helm-release.yaml

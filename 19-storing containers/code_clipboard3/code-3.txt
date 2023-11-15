@@ -1,0 +1,8 @@
+# Remove the image from the local registry
+docker rmi [Your DockerHub Username]/python-sample:1.0
+
+# List the images in the local registry to confirm deletion
+docker images
+
+# Pull the image from Docker Hub and run it
+docker run --publish 5000:5000 [Your DockerHub Username]/python-sample:1.0

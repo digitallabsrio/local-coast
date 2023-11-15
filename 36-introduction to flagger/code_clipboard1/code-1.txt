@@ -1,0 +1,1 @@
+kubectl set image deployment/python-sample-deployment python-sample=kmbeducative/python-sample:2.0

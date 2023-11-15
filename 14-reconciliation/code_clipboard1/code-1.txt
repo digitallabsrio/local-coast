@@ -1,0 +1,6 @@
+# Revert the application to the first version, causing drift
+kubectl set image deployment/python-sample-deployment python-sample=kmbeducative/python-sample:1.0
+
+# Send another request to the application
+IP=$(kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalIP")].address}')
+curl http://$IP:30000/

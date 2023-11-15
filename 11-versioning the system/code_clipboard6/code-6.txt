@@ -1,0 +1,11 @@
+cd /usercode/infrastructure
+
+# Apply the resources to restore the cluster
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+# Confirm the number of pods running on the cluster
+kubectl get pods
+
+# View the history of changes to the cluster
+git log

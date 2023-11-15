@@ -1,0 +1,1 @@
+cat /usercode/flux-infra/educative-cluster/python-sample-kustomization.yaml

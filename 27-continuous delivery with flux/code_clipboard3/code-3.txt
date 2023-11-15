@@ -1,0 +1,1 @@
+docker push [Your DockerHub username]/python-sample:2.0

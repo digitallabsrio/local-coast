@@ -1,0 +1,3 @@
+# Copy the content of the current directory on the file system into 
+# the current directory on the container image.
+COPY . . 

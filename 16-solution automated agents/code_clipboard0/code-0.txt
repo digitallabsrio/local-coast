@@ -1,0 +1,2 @@
+IP=$(kubectl get nodes -o jsonpath='{.items[*].status.addresses[?(@.type=="InternalIP")].address}')
+curl http://$IP:30000/

@@ -1,0 +1,15 @@
+cd /usercode
+
+# Store the desired state in a Git repository
+git init
+git add .
+git commit -m "Updating the number of replicas"
+
+cd /usercode/infrastructure
+
+# Apply the resources to heal the cluster
+kubectl apply -f deployment.yaml
+kubectl apply -f service.yaml
+
+# Confirm the number of pods running on the cluster.
+kubectl get pods

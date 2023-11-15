@@ -1,0 +1,2 @@
+# Add an additional worker node
+k3d node create extra_node -c mycluster --role agent

@@ -1,0 +1,7 @@
+  flux create kustomization example-kustomization \
+    --source=GitRepository/example-source \
+    --path="./infrastructure" \
+    --prune=true \
+    --interval=5m \
+    --target-namespace=default \
+    --export

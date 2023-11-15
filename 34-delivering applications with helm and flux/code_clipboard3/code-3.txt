@@ -1,0 +1,1 @@
+cat ./educative-cluster/python-sample-helm-release.yaml

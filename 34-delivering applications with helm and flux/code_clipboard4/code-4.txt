@@ -1,0 +1,4 @@
+cd /usercode/flux-infra
+git add .
+git commit -m "Adding the GitRepository and HelmRelease"
+git push

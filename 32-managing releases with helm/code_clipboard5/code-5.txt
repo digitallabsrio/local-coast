@@ -1,0 +1,1 @@
+helm upgrade -f python-sample/version2-values.yaml sample-chart ./python-sample

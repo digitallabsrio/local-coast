@@ -1,0 +1,1 @@
+nano /usercode/system/infrastructure/canary.yaml

@@ -1,0 +1,9 @@
+cd /usercode/flux-infra
+
+flux create kustomization example-kustomization \
+  --target-namespace=default \
+  --source=example-source \
+  --path="./infrastructure" \
+  --prune=true \
+  --interval=5m \
+  --export > ./educative-cluster/python-sample-kustomization.yaml

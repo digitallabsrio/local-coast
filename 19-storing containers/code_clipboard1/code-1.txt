@@ -1,0 +1,5 @@
+# Navigate to the location of the dockerfile
+cd /usercode/system/app
+
+# Build the container image
+docker build -t [Your DockerHub Username]/python-sample:1.0 .

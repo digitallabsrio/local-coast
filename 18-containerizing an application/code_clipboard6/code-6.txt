@@ -1,0 +1,2 @@
+cd /usercode/system/app
+docker build -t python-sample:1.0 .
